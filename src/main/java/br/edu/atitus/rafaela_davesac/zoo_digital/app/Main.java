@@ -125,7 +125,7 @@ public class Main {
         }
     }
         animais.add(novoAnimal);
-        System.out.println("\nAnimal \"" + novoAnimal.getNome() + "\" cadastrado com sucesso!");
+        System.out.println("\nAnimal " + novoAnimal.getNome() + " cadastrado com sucesso!");
     }
 
     void listarTodos() {
