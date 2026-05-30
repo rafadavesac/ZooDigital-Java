@@ -52,21 +52,22 @@ public class Main {
                                2- Gato
                                3- Golfinho
                                4- Coelho
+                               5- Lobo
                                --- Aves ---
-                               5- Pinguim
-                               6- Pato
-                               7- Beija-flor
-                               8- Papagaio
+                               6- Pinguim
+                               7- Pato
+                               8- Beija-flor
+                               9- Papagaio
                                --- Peixes ---
-                               9- Peixe Morcego
-                               10- Traíra
-                               11- Cavalo Marinho
-                               12- Tubarão
+                               10- Peixe Morcego
+                               11- Traíra
+                               12- Cavalo Marinho
+                               13- Tubarão
                                --- Reptéis ---
-                               13- Jacaré
-                               14- Naja
-                               15- Camaleão
-                               16- Lagarto
+                               14- Jacaré
+                               15- Naja
+                               16- Camaleão
+                               17- Lagarto
                                 """;
         IO.println(opcoesDeAnimais);
         int opcaoEspecie = Input.scanInt("Informe o tipo do animal: ");
@@ -83,38 +84,39 @@ public class Main {
         case 2 -> novoAnimal = new Gato(nome, idade);
         case 3 -> novoAnimal = new Golfinho(nome, idade);
         case 4 -> novoAnimal = new Coelho(nome, idade);
+        case 5 -> novoAnimal = new Lobo(nome,idade);
 
         // ---- AVES ----
-        case 5 -> {
+        case 6 -> {
             String corPenas = Input.scanString("Cor das penas: ").trim();
             novoAnimal = new Pato(nome, idade, corPenas);
         }
-        case 6 -> {
+        case 7 -> {
             String corPenas = Input.scanString("Cor das penas: ").trim();
             novoAnimal = new Pinguim(nome, idade, corPenas);
         }
-        case 7 -> {
+        case 8 -> {
             String corPenas = Input.scanString("Cor das penas: ").trim();
             novoAnimal = new BeijaFlor(nome, idade, corPenas);
         }
-        case 8 -> {
+        case 9 -> {
             String corPenas = Input.scanString("Cor das penas: ").trim();
             novoAnimal = new Papagaio(nome, idade, corPenas);
         }
 
 
         // ---- PEIXES ----
-        case 9 -> novoAnimal = new PeixeMorcego(nome, idade);
-        case 10 -> novoAnimal = new Traira(nome, idade);
-        case 11 -> novoAnimal = new CavaloMarinho(nome, idade);
-        case 12 -> novoAnimal = new Tubarao(nome, idade);
+        case 10 -> novoAnimal = new PeixeMorcego(nome, idade);
+        case 11 -> novoAnimal = new Traira(nome, idade);
+        case 12 -> novoAnimal = new CavaloMarinho(nome, idade);
+        case 13 -> novoAnimal = new Tubarao(nome, idade);
 
 
         // ---- RÉPTEIS ----
-        case 13 -> novoAnimal = new Jacare(nome, idade);
-        case 14 -> novoAnimal = new Naja(nome, idade);
-        case 15 -> novoAnimal = new Camaleao(nome, idade);
-        case 16 -> novoAnimal = new Lagarto(nome, idade);
+        case 14 -> novoAnimal = new Jacare(nome, idade);
+        case 15 -> novoAnimal = new Naja(nome, idade);
+        case 16 -> novoAnimal = new Camaleao(nome, idade);
+        case 17 -> novoAnimal = new Lagarto(nome, idade);
 
 
         default -> {

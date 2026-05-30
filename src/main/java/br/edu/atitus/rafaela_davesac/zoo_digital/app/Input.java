@@ -12,17 +12,6 @@ public class Input {
         }
     }
 
-    public static double scanDouble(String message) {
-        while (true) {
-            try {
-                double resultado = Double.parseDouble(IO.readln(message));
-                return resultado;
-            } catch (Exception e) {
-                IO.println("Valor inválido! Digite um número decimal");
-            }
-        }
-    }
-
     public static String scanString(String message) {
         while (true) { //loop infinito -> só cai fora quando o return é chamado
             String resultado = IO.readln(message);
