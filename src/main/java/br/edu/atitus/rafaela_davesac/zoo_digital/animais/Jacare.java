@@ -5,8 +5,8 @@ import br.edu.atitus.rafaela_davesac.zoo_digital.especies.Reptil;
 
 public class Jacare extends Reptil implements Nado, Corrida, Predacao{
 
-    public Jacare(String nome, Integer idade, String tipoHabitat) {
-        super(nome, idade, "Semi-aquático");
+    public Jacare(String nome, Integer idade) {
+        super(nome, idade, false);
     }
 
     @Override
@@ -16,7 +16,7 @@ public class Jacare extends Reptil implements Nado, Corrida, Predacao{
 
     @Override
     public void emitirSom() {
-        IO.println(this.getNome() + " está roncando ");
+        IO.println(this.getNome() + " está roncando");
     }
 
     @Override

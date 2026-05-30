@@ -2,19 +2,23 @@ package br.edu.atitus.rafaela_davesac.zoo_digital.especies;
 
 public abstract class Reptil extends Animal {
 
-    private String tipoHabitat;
+    private Boolean peconhento;
 
-    public Reptil(String nome, Integer idade, String tipoHabitat) {
+    public Reptil(String nome, Integer idade, Boolean peconhento) {
         super(nome, "Reptil", idade);
-        this.tipoHabitat = tipoHabitat;
+        this.peconhento = peconhento;
     }
 
-    public String tipoHabitat() {
-        return tipoHabitat;
+    public Boolean peconhento() {
+        return peconhento;
     }
 
-    public void setTipoHabitat(String tipoHabitat) {
-        this.tipoHabitat = tipoHabitat;
+    public Boolean getPeconhento() {
+        return peconhento;
+    }
+
+    public void setPeconhento(Boolean peconhento) {
+        this.peconhento = peconhento;
     }
 
 

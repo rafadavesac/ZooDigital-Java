@@ -17,7 +17,7 @@ public abstract class Animal {
     private String especie;
     private Integer idade;
 
-    // Método Construtor
+    // Method Construtor
     public Animal(String nome, String especie, Integer idade){
         this.nome = nome; // Inicializa o atributo "nome" com o valor do parâmetro "nome"
         this.especie = especie;
