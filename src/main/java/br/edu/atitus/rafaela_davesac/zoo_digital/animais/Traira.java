@@ -3,7 +3,7 @@ package br.edu.atitus.rafaela_davesac.zoo_digital.animais;
 import br.edu.atitus.rafaela_davesac.zoo_digital.comportamentos.*;
 import br.edu.atitus.rafaela_davesac.zoo_digital.especies.Peixe;
 
-public class Traira extends Peixe implements Nado{
+public class Traira extends Peixe implements Nado, Predacao{
 
     public Traira(String nome, int idade) {
         super(nome, idade, "Doce");
@@ -24,4 +24,8 @@ public class Traira extends Peixe implements Nado{
         IO.println(getNome() + " está nadando no rio");
     }
 
+    @Override
+    public void cacar() {
+        IO.println(getNome() + " está caçando lambaris no rio");
+    }
 }

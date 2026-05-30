@@ -3,7 +3,7 @@ package br.edu.atitus.rafaela_davesac.zoo_digital.animais;
 import br.edu.atitus.rafaela_davesac.zoo_digital.comportamentos.*;
 import br.edu.atitus.rafaela_davesac.zoo_digital.especies.Mamifero;
 
-public final class Coelho extends Mamifero implements Corrida, Nado {
+public final class Coelho extends Mamifero implements Corrida{
     public Coelho(String nome, Integer idade) {
         super(nome, idade, true);
     }
@@ -16,11 +16,6 @@ public final class Coelho extends Mamifero implements Corrida, Nado {
     @Override
     public void emitirSom() {
         IO.println(this.getNome() + " está fazendo barulhos baixinhos");
-    }
-
-    @Override
-    public void nadar() {
-        IO.println(this.getNome() + " está nadando apavorado");
     }
 
     @Override

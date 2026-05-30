@@ -11,7 +11,7 @@ public class PeixeMorcego extends Peixe implements Nado{
 
     @Override
     public void comer() {
-        this.comer("pesquenas algas");
+        this.comer("pequenas algas");
     }
 
     @Override
@@ -23,6 +23,7 @@ public class PeixeMorcego extends Peixe implements Nado{
     public void nadar() {
         IO.println(getNome() + " está nadando tranquilamente");
     }
+
 
 
 }

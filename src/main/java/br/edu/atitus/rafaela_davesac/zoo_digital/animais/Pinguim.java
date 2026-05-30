@@ -3,7 +3,7 @@ package br.edu.atitus.rafaela_davesac.zoo_digital.animais;
 import br.edu.atitus.rafaela_davesac.zoo_digital.comportamentos.*;
 import br.edu.atitus.rafaela_davesac.zoo_digital.especies.Ave;
 
-public class Pinguim extends Ave implements Nado {
+public class Pinguim extends Ave implements Nado, Predacao {
 
     public Pinguim(String nome, int idade, String corPenas) {
         super(nome, idade, corPenas);
@@ -24,4 +24,8 @@ public class Pinguim extends Ave implements Nado {
         IO.println(getNome() + " está nadando atrás de peixes");
     }
 
+    @Override
+    public void cacar() {
+        IO.println(getNome() + " está caçando krills no gelo");
+    }
 }

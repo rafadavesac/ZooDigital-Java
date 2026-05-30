@@ -51,22 +51,22 @@ public class Main {
                                1- Cachorro
                                2- Gato
                                3- Golfinho
-                               4- 
+                               4- Coelho
                                --- Aves ---
                                5- Pinguim
                                6- Pato
-                               7-
-                               8-
+                               7- Beija-flor
+                               8- Papagaio
                                --- Peixes ---
                                9- Peixe Morcego
                                10- Traíra
-                               11-
-                               12-
+                               11- Cavalo Marinho
+                               12- Tubarão
                                --- Reptéis ---
                                13- Jacaré
                                14- Naja
-                               15-
-                               16-
+                               15- Camaleão
+                               16- Lagarto
                                 """;
         IO.println(opcoesDeAnimais);
         int opcaoEspecie = Input.scanInt("Informe o tipo do animal: ");
@@ -264,6 +264,8 @@ public class Main {
     }
 
     void exibirTotalAnimais(){
+        IO.println("\n-----------------------------");
         IO.println("Número total de animais cadastrados: " + Animal.getContador());
+        IO.println("\n-----------------------------");
     }
 }
