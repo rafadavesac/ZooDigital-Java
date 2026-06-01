@@ -129,7 +129,7 @@ public class Main {
     }
 
     void listarTodos() {
-        IO.println("\n--- TODOS OS ANIMAIS ---");
+        IO.println("\n--- ANIMAIS CADASTRADOS---");
 
         if (animais.isEmpty()) {
             IO.println("Nenhum animal cadastrado ainda.");
@@ -161,7 +161,7 @@ public class Main {
             animal.comer();
         }
 
-        IO.println("\n-----------------------------");
+        IO.println("-----------------------------\n");
     }
 
     void listarCorredores(){
@@ -176,11 +176,12 @@ public class Main {
         for (Animal animal : animais) {
             if (animal instanceof Corrida){
                 Corrida corredor = (Corrida) animal;
-                IO.println("\n-----------------------------");
+                IO.println("\n--- ANIMAIS CORREDORES ---");
                 IO.println("Nome:    " + animal.getNome());
                 IO.println("Idade:   " + animal.getIdade() + " anos");
                 IO.println("Espécie: " + animal.getEspecie());
                 corredor.correr();
+                IO.println("-----------------------------\n");
                 encontrou = true;
             }
         }
@@ -201,11 +202,12 @@ public class Main {
         for (Animal animal : animais) {
             if (animal instanceof Nado){
                 Nado nadador = (Nado) animal;
-                IO.println("\n-----------------------------");
+                IO.println("\n--- ANIMAIS NADADORES ---");
                 IO.println("Nome:    " + animal.getNome());
                 IO.println("Idade:   " + animal.getIdade() + " anos");
                 IO.println("Espécie: " + animal.getEspecie());
                 nadador.nadar();
+                IO.println("-----------------------------\n");
                 encontrou = true;
             }
         }
@@ -226,11 +228,12 @@ public class Main {
         for (Animal animal : animais) {
             if (animal instanceof Voo){
                 Voo voador = (Voo) animal;
-                IO.println("\n-----------------------------");
+                IO.println("\n--- ANIMAIS VOADORES ---");
                 IO.println("Nome:    " + animal.getNome());
                 IO.println("Idade:   " + animal.getIdade() + " anos");
                 IO.println("Espécie: " + animal.getEspecie());
                 voador.voar();
+                IO.println("-----------------------------\n");
                 encontrou = true;
             }
         }
@@ -251,11 +254,12 @@ public class Main {
         for (Animal animal : animais) {
             if (animal instanceof Predacao){
                 Predacao predador = (Predacao) animal;
-                IO.println("\n-----------------------------");
+                IO.println("\n--- ANIMAIS PREDADORES ---");
                 IO.println("Nome:    " + animal.getNome());
                 IO.println("Idade:   " + animal.getIdade() + " anos");
                 IO.println("Espécie: " + animal.getEspecie());
                 predador.cacar();
+                IO.println("-----------------------------\n");
                 encontrou = true;
             }
         }
@@ -268,6 +272,6 @@ public class Main {
     void exibirTotalAnimais(){
         IO.println("\n-----------------------------");
         IO.println("Número total de animais cadastrados: " + Animal.getContador());
-        IO.println("\n-----------------------------");
+        IO.println("-----------------------------\n");
     }
 }
